@@ -1,0 +1,316 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+:root{
+--text: #fbfcfd;
+--background: #fbfcfd;
+--primary: #536cbc;
+--secondary: #99abe2;
+--accent: #5b7bdf;
+--secundary-backgrounds: #f2f5f8;
+--clr-texture-bg: #fafafa;
+--clr-body-bg: rgba(229, 229, 247, 0.726);
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    background-color: var(--primary);
+}
+
+body::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background-image: url("/img/wave-haikei\ \(1\).svg");
+    opacity: 0.3;
+}
+
+
+/* body > * > *{
+    border: 2px solid black;
+}
+body > *{
+    border: 2px solid black;
+} */
+
+.navegation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-block: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 400ms ease;
+}
+
+.notop{
+    background-color: rgba(0, 0, 0, 0.363);
+    backdrop-filter: blur(10px);
+
+}
+
+.nav-items a{
+    text-decoration: none;
+    font-size:large;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--text);
+    transition: 300ms ease;
+    min-width: 105px;
+}
+
+.nav-bar-items{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.nav-bar-logo{
+    display: fle;
+    align-self: center;
+    font-family: "Itim", cursive;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-items{
+    padding: 5px;
+}
+
+.active-item a{
+    color: var(--text);
+}
+
+.nav-items:hover a{
+    color: var(--text);
+    /* padding-inline: 10px; */
+    letter-spacing: 7px;
+    
+}
+
+.personal-info-card {
+    display: flex;
+    gap: 5vw;
+    margin-top: 120px;
+    width: 90%;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 30px;
+    color: white !important;
+    /* background-color: var(--secundary-backgrounds); */
+}
+
+.personal-info-photo img{
+    aspect-ratio: auto;
+    width: 17em;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 54px -14px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 54px -14px rgba(0,0,0,0.68);
+        box-shadow: 0px 0px 54px -14px rgba(0,0,0,0.68);  
+}
+
+
+.personal-info-text p{
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.personal-info-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 5px;
+    max-width: 27rem;
+}
+
+.info-card-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.info-card-buttons .first-child{
+    border: 0;
+    font-size: 1rem;
+    max-width: 9rem;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--primary);
+    background-color: var(--text);
+}
+
+.info-card-buttons .second-child{
+    border: 0;
+    font-size: 1rem;
+    max-width: 9rem;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid var(--text);
+    color: var(--text);
+    font-weight: 400;
+}
+
+.personal-info-photo img{
+    mask: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M849 685.5Q714 871 511 852T188 666.5Q68 500 159.5 284T491 84q240 16 366.5 216T849 685.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23444cf7%22 d=%22M849 685.5Q714 871 511 852T188 666.5Q68 500 159.5 284T491 84q240 16 366.5 216T849 685.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+
+  
+.personal-info-photo{
+    filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.493));
+}
+
+.skills-box{
+    margin-top: 2rem;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding: 100px; */
+    width: 95%;
+    padding: 2rem;
+    box-sizing:border-box;
+}
+
+.semidonut-css{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.semidonut-css img{
+    object-fit:contain;
+    aspect-ratio: 1/1;
+    z-index: 999;
+}
+
+
+.semidonut-css p{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.semidonut-css::after{
+    content: " ";
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    border: 17px solid;
+    border-color:#0d1717 #0d1717 var(--fill) var(--fill);
+    border-radius: 50%;
+    transform: rotate(calc(1deg * (-45 + var(--percentaje) * 1.8)));
+    animation: rebota 1s ease-in;
+}
+
+.semidonut-css::before{
+    content: " ";
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    border: 25px solid;
+    border-color:#0d1717 #0d1717 var(--fill) var(--fill);
+    border-radius: 50%;
+    transform: rotate(calc(1deg * (-45 + var(--percentaje) * 1.8)));
+    opacity: 0.2;
+    filter: blur(4px);
+    animation: rebota 1s ease-in;
+}
+
+.donut-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.donut-text p{
+    padding: 0.7rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid var(--text);
+    border-radius: 5rem;
+    min-width: 50%;
+    color: var(--text);
+    transition: 500ms ease;
+    
+}
+
+.donut-text p:hover{
+    background-color: var(--fill);
+    color: white;
+    border: none;
+}
+.title-box{
+    font-size: 2.5rem;
+    margin-top: 13rem;
+    color: var(--text);
+}
+
+.personal-info-text h1{
+padding: 0;
+margin: 0;
+color: var(--text);
+}
+.personal-info-text h2{
+    padding: 0;
+    margin: 0;
+    color: var(--secundary-backgrounds);
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    
+    }
+
+
+@keyframes rebota {
+	0% {
+		transform: rotate(calc(1deg * (-45 + 0 * 1.8)));
+	}
+}
+
+
