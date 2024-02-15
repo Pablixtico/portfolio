@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.oberlo.com/media/1631547010-portfolio4.png">
+    <meta property="og:url" content="pablixtico.github.io/portfolio">
     <title>Pablo Giménez | Inicio</title>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <nav class="navegation-bar">
         <div class="nav-bar-logo">Mí Portfolio</div>
         <div class="nav-bar-items">
-            <div class="nav-items active-item"><a href="#">Inicio</a></div>
-            <div class="nav-items"><a href="#">Sobre mi</a></div>
-            <div class="nav-items"><a href="#">Proyectos</a></div>
-            <div class="nav-items"><a href="#">Contacto</a></div>
+            <div class="nav-items active-item"><a href="#" onclick="resetactive(this)">Inicio</a></div>
+            <div class="nav-items"><a href="#" onclick="resetactive(this)">Sobre mi</a></div>
+            <div class="nav-items"><a href="#proyects" onclick="resetactive(this)">Proyectos</a></div>
+            <div class="nav-items"><a href="#" onclick="resetactive(this)">Contacto</a></div>
+        </div>
+        <div class="floating-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="floating-nav-bar">
+                <div class="navfloat-items active-item"><a href="#">Inicio</a></div>
+                <div class="navfloat-items"><a href="#">Sobre mi</a></div>
+                <div class="navfloat-items"><a href="#">Proyectos</a></div>
+                <div class="navfloat-items"><a href="#">Contacto</a></div>
+            </div>
         </div>
     </nav>
 
@@ -27,7 +43,7 @@
         <div class="personal-info-photo"><img src="img/apuesto-joven-brazos-cruzados-sobre-fondo-blanco_23-2148222620.avif"  walt="personal photo"></div>
     </div>
 
-    <h2 class="title-box">Mis Skills</h2>
+    <h2 class="title-box">Mis habilidades</h2>
     <div class="skills-box">
         <div draggable="true" class="donut-text"><div class="semidonut-css" style="--percentaje: 60; --fill:#379ad6;"><img src="img/csspng.png" alt="" width="50px" height="50px" style="animation: float 20s ease-in-out infinite;"></div><p style="--fill: #379ad6">CSS</p></div>
         <div class="donut-text"><div class="semidonut-css" style="--percentaje: 75; --fill:#e44d26;"><img src="img/HTML5_logo_and_wordmark.svg.png" alt="" width="50px" height="50px" style="animation: float 30s ease-in-out infinite;"></div> <p style="--fill: #e44d26">HTML</p></div>
@@ -36,19 +52,38 @@
     </div>
 
    <div id="proyects">
-            <div id="card">
+        <h2>Proyectos</h2>
+            <div class="card">
                 <div class="card-image">
-                    <img src="" alt="">
+                    <img src="img/weather app tumbnail.png" alt="">
                 </div>
                 <div class="card-text-content">
-                    <div class="title">defaultitle</div>
-                    <div class="main-text">defaultmaintext</div>
-                    <div class="card-footer"><div class="card-bubles"></div>
-                    <button class="card-button"></button>
+                    <div class="title">Aplicacion del tiempo</div>
+                    <div class="card-bubles"><div class="css">CSS</div><div class="html">HTML</div><div class="js">JS</div></div>
+                    <div class="main-text">Aplicacion desarrollada en html, css y js. La aplicacion se basa en la extraccion de datos a traves de una api de libre uso, su formateo en html y diseño en css.</div>
+                    <class="card-footer">
+                    <button class="card-button"><span class="icon-animate">Demo</span><span class="material-symbols-outlined">
+                        visibility
+                        </span></button>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-text-content">
+                            <div class="title">Aplicacion del tiempo</div>
+                            <div class="card-bubles"><div class="css">CSS</div><div class="html">HTML</div><div class="js">JS</div></div>
+                            <div class="main-text">Aplicacion desarrollada en html, css y js. La aplicacion se basa en la extraccion de datos a traves de una api de libre uso, su formateo en html y diseño en css.</div>
+                            <div class="card-footer">
+                            <button class="card-button reverse-button"><span class="icon-animate">Demo</span><span class="material-symbols-outlined">
+                                visibility
+                                </span></button>
+                            </div>
+                    </div>
+                    <div class="card-image reverse">
+                        <img src="img/quizitumbnail.png" alt="">
+                    </div>
+       </div>
             </div>
-   </div>
+            
 </body>
 </html>
 
