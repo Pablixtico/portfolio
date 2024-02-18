@@ -8,6 +8,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.oberlo.com/media/1631547010-portfolio4.png">
     <meta property="og:url" content="pablixtico.github.io/portfolio">
+    <script src="https://kit.fontawesome.com/05c342c5f5.js" crossorigin="anonymous"></script>
     <title>Pablo Giménez | Inicio</title>
     <script src="js/main.js" defer></script>
 </head>
@@ -16,9 +17,9 @@
         <div class="nav-bar-logo">Mí Portfolio</div>
         <div class="nav-bar-items">
             <div class="nav-items active-item"><a href="#" onclick="resetactive(this)">Inicio</a></div>
-            <div class="nav-items"><a href="#" onclick="resetactive(this)">Sobre mi</a></div>
+            <div class="nav-items"><a href="#habilidades" onclick="resetactive(this)">Habilidades</a></div>
             <div class="nav-items"><a href="#proyects" onclick="resetactive(this)">Proyectos</a></div>
-            <div class="nav-items"><a href="#" onclick="resetactive(this)">Contacto</a></div>
+            <div class="nav-items"><a href="#contacto" onclick="resetactive(this)">Contacto</a></div>
         </div>
         <div class="floating-icon">
             <span></span>
@@ -26,29 +27,38 @@
             <span></span>
             <span></span>
             <div class="floating-nav-bar">
-                <div class="navfloat-items active-item"><a href="#">Inicio</a></div>
-                <div class="navfloat-items"><a href="#">Sobre mi</a></div>
-                <div class="navfloat-items"><a href="#">Proyectos</a></div>
-                <div class="navfloat-items"><a href="#">Contacto</a></div>
+                <div class="navfloat-items active-item" ><a href="#">Inicio</a></div>
+                <div class="navfloat-items"><a href="#habilidades">Habilidades</a></div>
+                <div class="navfloat-items"><a href="#proyects">Proyectos</a></div>
+                <div class="navfloat-items"><a href="#contacto">Contacto</a></div>
             </div>
         </div>
     </nav>
-
+    <a href="#habilidades"><div class="down-icon"><span class="material-symbols-outlined">expand_circle_down</span></div></a>
     <div class="personal-info-card">
         <div class="personal-info-text"><h1>Pablo Gimenez</h1><h2>-- Web developer</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quisquam nesciunt minus sapiente blanditiis, temporibus animi magnam dolore nam repudiandae ipsum itaque soluta, fuga impedit? Mollitia laboriosam fuga excepturi unde!</p>
-        <div class="info-card-buttons">
-            <button class="first-child">Contacto</button> <button class="second-child">Más sobre mi</button>
+            <div class="rrss-icons">
+                <a href="https://www.linkedin.com/in/pablixtico/"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Pablixtico"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="info-card-buttons">
+                <button class="first-child">Ver proyectos</button> 
+                <button class="second-child">Contacto
+                </button>
+            </div>
         </div>
+        <div class="personal-info-photo">
+            <img src="img/apuesto-joven-brazos-cruzados-sobre-fondo-blanco_23-2148222620.avif"  alt="personal photo">
         </div>
-        <div class="personal-info-photo"><img src="img/apuesto-joven-brazos-cruzados-sobre-fondo-blanco_23-2148222620.avif"  walt="personal photo"></div>
     </div>
 
-    <h2 class="title-box">Mis habilidades</h2>
+
+    <h2 class="title-box" id="habilidades">Mis habilidades</h2>
     <div class="skills-box">
-        <div draggable="true" class="donut-text"><div class="semidonut-css" style="--percentaje: 60; --fill:#379ad6;"><img src="img/csspng.png" alt="" width="50px" height="50px" style="animation: float 20s ease-in-out infinite;"></div><p style="--fill: #379ad6">CSS</p></div>
-        <div class="donut-text"><div class="semidonut-css" style="--percentaje: 75; --fill:#e44d26;"><img src="img/HTML5_logo_and_wordmark.svg.png" alt="" width="50px" height="50px" style="animation: float 30s ease-in-out infinite;"></div> <p style="--fill: #e44d26">HTML</p></div>
-        <div class="donut-text"><div class="semidonut-css" style="--percentaje: 35; --fill:#69ae14;"><img src="img/JavaScript-logo.webp" alt="" width="55px" height="55px" style="animation: float 25s ease-in-out infinite;"></div><p style="--fill: #69ae14">JS</p></div>
-        <div class="donut-text"><div class="semidonut-css" style="--percentaje: 50; --fill:#73a1fb;"><img src="img/Java_programming_language_logo.svg.png" alt="" width="50px" height="50px" style="animation: float 17s ease-in-out infinite;"></div><p style="--fill: #73a1fb">Java</p></div>
+        <div draggable="true" class="donut-text"><div class="semidonut-css" style="--percentaje: 60; --fill:#379ad6;"><img src="img/csspng.png" alt="" width="50px" height="50px"></div><p style="--fill: #379ad6">CSS</p></div>
+        <div class="donut-text"><div class="semidonut-css" style="--percentaje: 75; --fill:#e44d26;"><img src="img/HTML5_logo_and_wordmark.svg.png" alt="" width="50px" height="50px"></div> <p style="--fill: #e44d26">HTML</p></div>
+        <div class="donut-text"><div class="semidonut-css" style="--percentaje: 35; --fill:#69ae14;"><img src="img/JavaScript-logo.webp" alt="" width="55px" height="55px"></div><p style="--fill: #69ae14">JS</p></div>
+        <div class="donut-text"><div class="semidonut-css" style="--percentaje: 50; --fill:#73a1fb;"><img src="img/Java_programming_language_logo.svg.png" alt="" width="50px" height="50px"></div><p style="--fill: #73a1fb">Java</p></div>
     </div>
 
    <div id="proyects">
@@ -83,7 +93,47 @@
                     </div>
        </div>
             </div>
-            
+         <div class="contact-card-computer" id="contacto" style="margin-block:4rem; display: flex; align-items: center;">
+                <h2 style="margin-top:2rem; color:white; font-size: 2.5rem;">Contacto</h2>
+                <div class="floating-contact">
+                    <div style="min-width: 264px;">
+                        <img src="img/foto-carnet-cuadrado.jpg" alt="" style="border-radius: 50%; margin-bottom: 10px;">
+                        <div style="align-items: left; display: flex; flex-direction: column; width: 100%;">
+                            <h2>Pablo Gimenez</h2>
+                            <div class="rrss-icons" style="font-size: 1rem;">
+                                <a href="https://www.linkedin.com/in/pablixtico/"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/Pablixtico"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-phone" style="margin-right: 10px;"></i><a href="tel:666622113">+34 666 62 21 13</a></p>
+                            <p><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i><a href="mailto:pablo.gimenez.ricart@gmail.com">pablo.gimenez.ricart@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div style="background-color: #379ad6; min-width: 2px; height: 70%; border-radius: 10px;"></div>
+                    <p style="min-width: 390px; font-size: 1.5rem;font-family: Itim, cursive; font-style: italic;">"La programación es el lenguaje con el que damos vida a las máquinas, transformando ideas en realidad digital. En cada línea de código, tejemos el tapiz de la innovación, creando el futuro paso a paso."</p>
+                </div>
+           </div>
+
+           <div class="contact-card-movile" id="contacto-movile" style="margin-block:4rem;align-items: center;">
+            <h2 style="margin-top:2rem; color:white; font-size: 2.5rem;">Contacto</h2>
+            <div class="floating-contact-movile">
+                    <img src="img/foto-carnet-cuadrado.jpg" alt="" style="border-radius: 50%; margin-bottom: 10px;">
+                    <div style="align-items: left; display: flex; flex-direction: column; width: 100%;">
+                        <h2>Pablo Gimenez</h2>
+                        <div class="rrss-icons" style="font-size: 1rem;">
+                            <a href="https://www.linkedin.com/in/pablixtico/"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/Pablixtico"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-phone" style="margin-right: 10px;"></i><a href="tel:666622113">+34 666 62 21 13</a></p>
+                        <p><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i><a href="mailto:pablo.gimenez.ricart@gmail.com">pablo.gimenez.ricart@gmail.com</a></p>
+                    </div>
+            </div>
+       </div>
+
+           
 </body>
 </html>
 
