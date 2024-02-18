@@ -272,10 +272,12 @@ transform: scale(1,1);
 }
 
 .personal-info-photo img{
-    mask: url("/img/blob.svg") center/contain no-repeat;
+    mask: url("/img/blob.svg")  center no-repeat;
+    mask-size: 25rem;
     aspect-ratio: 1/1;
     max-height: 25rem;
     width: auto;
+
 
 }
 
@@ -286,6 +288,7 @@ transform: scale(1,1);
     display: flex;
     align-items: center;
 }
+
 
 .skills-box{
     margin-top: 2rem;
@@ -693,6 +696,11 @@ color: var(--text);
         animation: tarjetareverse 1s ease;
     }
 
+    .floating-contact:not(:hover){
+        animation: parpadeo 2s infinite;
+        animation-direction: alternate;
+    }
+
     .floating-contact-movile{
         display: hidden;
         overflow: hidden;
@@ -760,10 +768,46 @@ color: var(--text);
         width: 10rem;
     }
     
-@keyframes tarjeta {
+
+    @keyframes parpadeo{
         0%{
-            filter: grayscale(100);
-            height: 200px;
+            opacity: 1;
+        }
+        100%{
+            opacity: 0.6;
+        }
+
+    }
+    @keyframes tarjeta {
+            0%{
+                filter: grayscale(100);
+                height: 200px;
+
+
+            }
+            50% {
+                height: 400px;
+                filter: grayscale(0);
+                width: 10rem;
+            }
+            80%{
+            }
+
+            100%{
+                height: 400px;
+                filter: grayscale(0);
+                width: 700px;
+                align-items: center;
+            }
+            
+    }
+
+    @keyframes tarjetareverse {
+        0%{
+            height: 400px;
+            filter: grayscale(0);
+            width: 700px;
+            align-items: center;
 
 
         }
@@ -776,38 +820,12 @@ color: var(--text);
         }
 
         100%{
-            height: 400px;
-            filter: grayscale(0);
-            width: 700px;
-            align-items: center;
+            
+            filter: grayscale(100);
+            height: 200px;
         }
         
-}
-
-@keyframes tarjetareverse {
-    0%{
-        height: 400px;
-        filter: grayscale(0);
-        width: 700px;
-        align-items: center;
-
-
     }
-    50% {
-        height: 400px;
-        filter: grayscale(0);
-        width: 10rem;
-    }
-    80%{
-    }
-
-    100%{
-        
-        filter: grayscale(100);
-        height: 200px;
-    }
-    
-}
 
 @keyframes rebota {
 	0% {
