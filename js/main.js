@@ -1,9 +1,7 @@
-
-
-
 window.onscroll = function() {
     let navbar = document.getElementsByClassName("navegation-bar")
     var y = window.scrollY;
+    console.log(y)
     y>5?navbar[0].classList.add("notop"):navbar[0].classList.remove("notop")
   };
 
@@ -12,7 +10,6 @@ window.onscroll = function() {
     document.getElementsByClassName("floating-icon")[0].classList.toggle("open");
     document.getElementsByClassName("floating-nav-bar")[0].classList.toggle("floating-active");
     setTimeout(() => {
-    console.log("1 Segundo esperado")
     document.getElementsByClassName("floating-nav-bar")[0].classList.toggle("floating-active-transition");
   }, 1);
   })
@@ -23,4 +20,3 @@ window.onscroll = function() {
     active.parentNode.classList.add("active-item")
     
   }
-
