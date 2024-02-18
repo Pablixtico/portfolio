@@ -272,7 +272,7 @@ transform: scale(1,1);
 }
 
 .personal-info-photo img{
-    mask: url("/img/blob.png")  center no-repeat;
+    mask: url("/img/mascara.png")  center no-repeat;
     mask-size: 25rem;
     aspect-ratio: 1/1;
     max-height: 25rem;
