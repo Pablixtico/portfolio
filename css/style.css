@@ -696,7 +696,7 @@ color: var(--text);
         animation: tarjetareverse 1s ease;
     }
     .floating-contact:not(:hover){
-        /* animation: parpadeo 1s infinite; */
+        animation: parpadeo 1s infinite;
         animation-direction: alternate;
     }
 
