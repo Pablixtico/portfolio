@@ -180,7 +180,8 @@ transform: scale(1,1);
 .personal-info-card {
     display: flex;
     gap: 5vw;
-    width: 90%;
+    box-sizing: border-box;
+    width: 100%;
     height: 100vh;
     justify-content: center;
     padding: 30px;
@@ -414,7 +415,7 @@ color: var(--text);
     
     }
     #proyects{
-        width: 100%;
+        width: 90%;
         display: flex;
         align-items: center;
         gap: 3rem;
@@ -438,7 +439,6 @@ color: var(--text);
         color: white;
         gap: 3rem;
         padding-block: 2rem;
-        margin: 0 auto;
         border-radius: 1rem;
         -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.65);
         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.65);
