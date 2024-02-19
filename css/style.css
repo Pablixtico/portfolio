@@ -10,6 +10,7 @@
 --secundary-backgrounds: #f2f5f8;
 --clr-texture-bg: #fafafa;
 --clr-body-bg: rgba(229, 229, 247, 0.726);
+
 }
 
 
@@ -210,7 +211,7 @@ transform: scale(1,1);
 
 .personal-info-text p{
     text-align: left;
-    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
     font-weight: 300;
     margin:0;
     margin-top: 1.5rem;
@@ -393,7 +394,7 @@ transform: scale(1,1);
 }
 .title-box{
     font-size: 2.5rem;
-    margin-top: 10vw;
+    margin-top: 5rem;
     color: var(--text);
 }
 
@@ -401,6 +402,8 @@ transform: scale(1,1);
 padding: 0;
 margin: 0;
 color: var(--text);
+
+
 }
 .personal-info-text h2{
     padding: 0;
@@ -672,6 +675,7 @@ color: var(--text);
         display: none;
         flex-direction: column;
         align-items: center;
+        width: 80%;
     }
 
 
@@ -716,6 +720,7 @@ color: var(--text);
         box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.65);
         font-family: "Roboto", sans-serif;
         z-index: 50;
+        width: 80%;
     }
     .floating-contact-movile a{
         color: white;
@@ -755,6 +760,11 @@ color: var(--text);
     .floating-contact > p{
         margin-top: 0.7rem;
         font-size: 1rem;
+    }
+
+    .floating-contact-movile p{
+        margin-top: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .floating-contact img{
@@ -892,6 +902,12 @@ color: var(--text);
 }
 
 @media(max-width: 978px){
+    #proyects h2{
+        margin-top: 10rem;
+    }
+    .title-box{
+        margin-top: 10rem;
+    }
     .personal-info-card{
         flex-direction: column;
         align-items: center;
@@ -901,8 +917,9 @@ color: var(--text);
         order: -1;
     }
     .personal-info-photo img{
+        margin-top: 10rem;
         max-height: 20rem;
-        mask-size: 23rem;
+        mask-size: 20rem;
     }
 }
 
